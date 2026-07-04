@@ -1,0 +1,12 @@
+{
+  "name": "Oracle DB Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [1521, 5500],
+  "portsAttributes": {
+    "1521": { "label": "Oracle Listener" },
+    "5500": { "label": "Oracle EM Express" }
+  }
+}
